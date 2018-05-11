@@ -60,7 +60,7 @@ while True:
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = frame[y:y+h, x:x+w]
         if timeout < 20:
-            timeout += 10
+            timeout += 5
         
     if len(faces) != 0 or timeout != 0:
         crop_img = frame[last_y:last_y+last_h, last_x:last_x+last_w]
